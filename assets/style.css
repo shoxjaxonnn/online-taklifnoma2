@@ -5,8 +5,9 @@
 }
 
 .wrapper1 {
-  font-family: "Times New Roman", Times, serif;
-  background: url("/assets/img/bg-mobile.webp") no-repeat center top;
+  font-family: "Gravitas One", serif;
+  font-weight: 300;
+  background: url("/assets/img/bg1.webp") no-repeat center top;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -16,8 +17,9 @@
   padding: 20px;
 }
 .wrapper2 {
-  font-family: "Times New Roman", Times, serif;
-  background: url("/assets/img/mobile-bg2.webp") no-repeat center top;
+  font-family: "Gravitas One", serif;
+  font-weight: 300;
+  background: url("/assets/img/7+\ Floral\ White\ And\ Gold\ Birthda.webp") no-repeat center top;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -26,8 +28,8 @@
   text-align: center;
   padding: 20px;
 }
-.cardo-regular {
-  font-family: "Cardo", serif;
+.gravitas-one-regular {
+  font-family: "Gravitas One", serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -43,30 +45,52 @@
 h1 {
   font-family: "Great Vibes", cursive;
   font-size: 2.8rem;
-  color: #2e2e2e;
+  color: #bebc4e;
   margin-bottom: 50px;
+  background-color: white;
+  padding: 5px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: rgba(126, 123, 123, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 253, 253, 0.1);
 }
 
 h2 {
   font-size: 1.4rem;
-  color: white;
+  color: wheat;
   margin-bottom: 30px;
+  font-family: "Gravitas One", serif;
+  font-weight: 300;
 }
 h3 {
   font-size: 3.6rem;
   font-family: "Great Vibes", cursive;
-  color: #2e2e2e;
+  color: #bebc4e;
   margin-bottom: 20px;
 }
 h4 {
   font-size: 1.4rem;
-  color: #2e2e2e;
+  color: wheat;
+  background-color: white;
+  padding: 8px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: rgba(126, 123, 123, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 253, 253, 0.1);
+  font-family: "Gravitas One", serif;
+  font-weight: 300;
 }
 
 .names {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #4a3100;
+   color: #bebc4e;
   margin: 10px 0;
   font-family: "Cardo", serif;
   /* transform: scale(1,1.1) translate(-50%,10%); */
@@ -74,7 +98,7 @@ h4 {
 
 .and {
   font-size: 1.7rem;
-  color: #555;
+  color: wheat;
   font-family: "Cardo", serif;
 }
 @keyframes fadeInUp {
@@ -102,53 +126,49 @@ h4 {
 .box {
   width: 100%;
   height: 100px;
-  background-color: #847f66;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: rgba(158, 154, 154, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .box .bird {
   height: 100%;
   width: auto;
   object-fit: contain;
-  
 }
 .party {
   display: flex;
   align-items: center;
-  padding-top: 100px;
-}
-.left img {
-  height: 100%;
-  width: auto;
-}
-.party .left {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 180px;
-  height: 100px;
-  padding-left: 30px;
-  border-right: 1px solid #000;
 }
 .party .right p {
-  font-size: 3.05rem;
-  color: #333;
+  font-size: 2.05rem;
+  color: wheat;
   font-family: "Great Vibes", cursive;
 }
-.party .right{
+.party .right {
   padding-left: 20px;
 }
-.text span{
+.text span {
   font-size: 3.05rem;
-  color: #333;
+   color: #bebc4e;
   line-height: 1.6;
   font-family: "Great Vibes", cursive;
 }
-.text{
-  font-family: "Cardo",serif;
-  font-size: 1.8rem;
-  color: #333;
+.text {
+  font-family: "Cardo", serif;
+  font-size: 1.4rem;
+  color: wheat;
+  background: rgba(50, 48, 48, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+  padding: 5px;
+  font-family: 'Times New Roman', Times, serif;
 }
