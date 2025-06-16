@@ -2,148 +2,153 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-.container {
+
+.wrapper1 {
+  font-family: "Times New Roman", Times, serif;
+  background: url("/assets/img/bg-mobile.webp") no-repeat center top;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
   padding: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
-.main-container {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-.pinyon-script-regular {
-  font-family: "Pinyon Script", cursive;
-  font-weight: 400;
-  font-style: normal;
+.wrapper2 {
+  font-family: "Times New Roman", Times, serif;
+  background: url("/assets/img/mobile-bg2.webp") no-repeat center top;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 .cardo-regular {
   font-family: "Cardo", serif;
   font-weight: 400;
   font-style: normal;
 }
-.cardo-bold {
-  font-family: "Cardo", serif;
-  font-weight: 700;
-  font-style: normal;
+
+.invitation {
+  padding: 30px 20px;
+  border-radius: 16px;
+  animation: fadeInUp 1.5s ease-out;
+  max-width: 500px;
+  width: 100%;
 }
 
-body {
-  background: url("/assets/img/naqsh.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 100vh;
-}
-.wrapper {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
-.paragraph1 {
-  font-family: "Pinyon script", cursive;
-  font-size: 30px;
-  font-weight: 400;
-  text-align: center;
-  margin-top: 50px;
-  color: #4a3100;
-}
-.paragraph2 {
-  font-size: 25px;
-  text-align: center;
-  margin-top: 5px;
-  font-family: "Cardo", serif;
-  font-weight: 300;
-  color: #4a3100;
-}
-.paragraph3 {
-  text-align: center;
-  font-family: "Cardo", serif;
-  font-weight: 700;
-  font-style: normal;
-  margin-top: 80px;
-  font-size: 45px;
-}
-.img-controller {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  position: relative;
-  /* Consider adjusting width/height based on actual image and desired layout */
-  width: 200px; /* Kept original for now, but consider its relation to img width */
-  height: 50px; /* Kept original for now, but consider its relation to img top offset */
-}
-.img-controller img {
-    margin-top: -130px;
-  width: 300px; /* Image is wider than its controller */
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.8rem;
+  color: #2e2e2e;
+  margin-bottom: 50px;
 }
 
-.paragraph4 {
-  font-family: "Pinyon script", cursive;
-  text-align: center;
-  font-weight: 500;
-  font-size: 35px;
-  margin-top: 35px;
-  color: #4a3100;
+h2 {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 30px;
 }
-.paragraph5 {
-  font-family: "Pinyon script", cursive;
-  font-size: 40px;
-  font-weight: 400;
-  text-align: center;
-  color: #4a3100;
-  margin-top: 100px;
-}
-.paragraph6 {
-  text-align: center;
-  font-family: "Cardo", serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25px;
-  margin-top: 20px;
-  color: #4a3100;
+h3 {
+  font-size: 3.6rem;
+  font-family: "Great Vibes", cursive;
+  color: #2e2e2e;
   margin-bottom: 20px;
 }
+h4 {
+  font-size: 1.4rem;
+  color: #2e2e2e;
+}
 
-.paragraph7 {
-  text-align: center;
+.names {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4a3100;
+  margin: 10px 0;
   font-family: "Cardo", serif;
-  font-style: normal;
-  font-size: 25px;
-  color: #4a3100;
-  margin-top: 50px;
+  /* transform: scale(1,1.1) translate(-50%,10%); */
 }
-.paragraph8 {
-  text-align: center;
-  font-family: "Cardo", serif; /* Changed 'cursive' to 'serif' as Cardo is a serif font */
-  font-style: normal;
-  font-size: 25px;
-  color: #4a3100;
-  margin-top: 20px;
+
+.and {
+  font-size: 1.7rem;
+  color: #555;
+  font-family: "Cardo", serif;
 }
-.last-section{
-    /* Consider using min-height or letting content define height for better responsiveness */
-    height:170vh; /* Kept original, but be aware of large fixed height */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-/* Removed the extra '}' at the end of the file */
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .names {
+    font-size: 2.5rem;
+  }
+  .text {
+    font-size: 1.2rem;
+  }
+}
+.box {
+  width: 100%;
+  height: 100px;
+  background-color: #847f66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.box .bird {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  
+}
+.party {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+.left img {
+  height: 100%;
+  width: auto;
+}
+.party .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 180px;
+  height: 100px;
+  padding-left: 30px;
+  border-right: 1px solid #000;
+}
+.party .right p {
+  font-size: 3.05rem;
+  color: #333;
+  font-family: "Great Vibes", cursive;
+}
+.party .right{
+  padding-left: 20px;
+}
+.text span{
+  font-size: 3.05rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Great Vibes", cursive;
+}
+.text{
+  font-family: "Cardo",serif;
+  font-size: 1.8rem;
+  color: #333;
+}
